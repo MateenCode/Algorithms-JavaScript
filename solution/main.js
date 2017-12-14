@@ -15,7 +15,7 @@ Read the instructions to determine how to assess your code.
     INSTRUCTIONS:
     Create an algorithm that uses the letters in the `singles` array to populate the `combos` array
     with every possible combination of TWO letters. e.g. [ 'aa', 'ab', 'ac', 'ad', ... , 'ec', 'ed', 'ee' ]
-    
+
     NOTE:
     - The `combos` array should have 25 items after populated by your algorithm
     - Do not change the `singles` array
@@ -29,6 +29,9 @@ Read the instructions to determine how to assess your code.
             combos.push( singles[ i ] + singles[ j ] );
         }
     }
+    console.log(combos)
+
+
 
     console.assert( combos.length == 25, { "message" : "`combos.length` does not equal 25", "combos.length" : combos.length } );
     console.assert( utility.areArraysEqual( combos, utility.combos ), { "message" : "`combos` does not contain all combinations of letters", "combos" : combos } );
@@ -43,7 +46,7 @@ Read the instructions to determine how to assess your code.
     /*******************
     INSTRUCTIONS:
     Read through the word problem and write an algorithm that satisfies the scenario.
-    
+
     WORD PROBLEM:
     You are going on a road trip and you will pass through several large cities on the way
     to your final destination. You decide to write a little script to help you decide which route you will take
@@ -62,7 +65,7 @@ Read the instructions to determine how to assess your code.
 
     You have one variable `timeOfDay` that holds the current time (in military time) which is 500 (5am).
     Once you have your algorithm working, change the `timeOfDay` to a few times to ( 800, 1200, 1700, and 2000 )
-    test the algorithm and see if it works consistently. 
+    test the algorithm and see if it works consistently.
     ***********************/
 
     var timeOfDay = 500;
